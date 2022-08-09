@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+	<base href="https://tornadic-relay.000webhostapp.com/" target="_self">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="free online books reading">
+  <meta name="keywords" content="books, reading online,action,fantasy">
+  <meta name="author" content="Deepanshu choudhary">
+<style>
+	
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+h1{
+	font-family: algerian; color:darkblue;
+}
+h2{
+	font-family: ariel black; color: darkslateblue; display: inline-block; border: 3px solid darkslateblue; background-color: chocolate; 
+}
+h1{
+	border: 5px solid darkslateblue; outline-width: medium; width: 100%;
+	background-color: lightcoral; alignment-baseline: middle;
+}
+img{
+	margin-left: 5%;
+	margin-right: 40%;
+	width: 100%;
+	max-height: 100%;
+}
+body{
+	background-image: url(https://media.sketchfab.com/models/2d324435133a42b6b0ae4c9cc2a5b277/thumbnails/82a0b52bf1eb481eb5df715fcbbcdd6d/a6712bf9765e457f852c5efedbe8ad22.jpeg);
+  background-repeat: no-repeat;                     
+  background-attachment: fixed;
+  background-size: cover;
+                                                         <!--------body ke background images ke liye-------->
+}
+h2{
+	text-align: right;
+}
+h1{
+	text-align: center;
+}
+</style>
+<title> MY BOOKSTORE</title>
+
+<script type="text/javascript">
+	background.js{
+	chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+  switch (msg.action) {
+    case 'openNotes':
+      chrome.tabs.create({
+        url: '/notes.html',
+        active: true,
+        index: sender.tab.index + 1,
+        openerTabId: sender.tab.id,
+      });
+      return;
+  }
+});
+}
+manifest.json{
+	"background": {
+  "scripts": ["background.js"],
+  "persistent": false
+
+
+  ...
+  "web_accessible_resources": [
+    {
+      "resources": [ "test1.png", "test2.png" ],
+      "matches": [ "https://web-accessible-resources-1.glitch.me/*" ]
+    }, {
+      "resources": [ "test3.png", "test4.png" ],
+      "matches": [ "https://web-accessible-resources-2.glitch.me/*" ],
+      "use_dynamic_url": true
+    }
+  ],
+  ...
+
+}
+</script>
+}
+</head>
+<body alink = "#54A250" link = "#040404" vlink = "#F40633" class="back" meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+<h1> <B><i><u><span> MY BOOK STORE</span></u> </i></B></h1>
+</div><div class="main">
+	<img 
+src= "https://preview.free3d.com/img/2019/08/2146756009522103782/0suhm9ye-900.jpg" />
+</div>
+<h2 align="right"><i><span>GENRE</span></i></h2>
+<div class="menu">
+<ul>
+	<li><a href="C:\Users\Admin\OneDrive\Documents\romance.html" target="_self"> ROMANCE</a>
+	<li><a href="C:\Users\Admin\OneDrive\Documents\action.html" target="_self">ACTION</a>
+		<li><a href="C:\Users\Admin\OneDrive\Documents\adventure.html" target="_self">ADVENTURE</a>
+			<li>SCEINCE</li></li></li></li>
+	<li>HISTORICAL</li>
+	<li><a href="C:\Users\Admin\OneDrive\Documents\fantasy.html" target="_self">FANTASTICFICTION</a></li>
+</ul>
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">
+	                               <!------page ke last me copyright dene ke liye----->
+</div>
+</div>
+</body>
+</html>
